@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mene list</title>
+    <style>
+
+
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+
+}
+
+.card {
+  width: 27%;
+  background: #fff;
+  border-radius: 16px;
+  padding: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+  transition: 0.3s ease-in-out;
+  margin-bottom: 2%;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+}
+
+
+
+.Product-image img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.Product-title {
+  font-size: 17px;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0;
+}
+
+.rive {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Rating-stars {
+  background: #2d8808;
+  padding: 3px 8px;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.review-count {
+  font-size: 14px;
+  color: #666;
+}
+
+.price {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.amount {
+  font-size: 20px;
+  font-weight: 700;
+  color: #2c7a56;
+}
+
+.offer {
+  color: #e60023;
+  background: #ffe8ec;
+  padding: 4px 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+    </style>
+  </head>
+  <body>
+    
+      <div class="products" id="products"></div>
+   
+    <script src="ajax.js"></script>
+  </body>
+</html>
